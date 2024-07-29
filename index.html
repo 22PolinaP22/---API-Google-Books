@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookshop</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            Bookshop
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="#">BOOKS</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">audiobooks</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">Stationery & gifts</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#">blog</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav__button">
+        <button type="button" class="header__button">
+            <img src="./images/png/user.png" alt="профиль">
+        </button>
+        <button type="button" class="header__button">
+            <img src="./images/png/search.png" alt="поиск">
+        </button>
+        <button type="button" class="header__button">
+            <img src="./images/png/shop bag.png" alt="покупки">
+        </button>
+    </nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="./images/png/banner.png" alt="black friday sale">
+                </div>
+                <div class="slide">
+                    <img src="./images/png/banner 2.png" alt="top 10 books">
+                </div>
+                <div class="slide">
+                    <img src="./images/png/banner 3.png" alt="our cozy books selection">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manial-btn"></label>
+                <label for="radio2" class="manial-btn"></label>
+                <label for="radio3" class="manial-btn"></label>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+        <div class="block">
+            <a class="block_link" href="#">Change <br>old book <br> new</a>
+            <img class="arrow" src="./images/png/arrow.png" alt="arrow">
+        </div>
+        <div class="block2">
+            <a class="block_link2" href="#">top 100 books 2022</a>
+            <img class="arrow" src="./images/png/arrow.png" alt="arrow2">
+        </div>
+        <div class="nav_block">
+            <nav class="main_nav">
+                <ul class="main_list">
+                    <li class="main_item">
+                        <a class="main_link">Architecture</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Art & Fashion</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Biography</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Business</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Crafts & Hobbies</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Drama</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Fiction</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Food & Drink</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Health & Wellbeing</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">History & Politics</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Humor</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Poetry</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Psychology</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Science</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Technology</a>
+                    </li>
+                    <li class="main_item">
+                        <a class="main_link">Travel & Maps</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <div class="container">
+                <ul class="cards">
+                    <li class="card">
+                        <img class="img_card" src="./images/png/book1.png" alt="book">
+                        <div class="text_card">
+                            <p class="authors">Kevin Kwan</p>
+                            <h1 class="heading">Crazy rich asians</h1>
+                            <img src="./images/png/rating.png" alt="rating" class="rating">
+                            <p class="text">The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip...</p>
+                            <p class="price">$4.99</p>
+                            <button class="btn_buy" type="button">BUY NOW</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="img_card" src="./images/png/book2.png" alt="book">
+                        <div class="text_card">
+                            <p class="authors">Margaret Atwood</p>
+                            <h1 class="heading">The handmaid’s tale</h1>
+                            <img src="./images/png/rating (1).png" alt="rating" class="rating">
+                            <p class="text">This novel can be interpreted as a double narrative, Offred's tale and the handmaids' tales. The night...</p>
+                            <p class="price">$6.99</p>
+                            <button class="btn_buy" type="button">BUY NOW</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="img_card" src="./images/png/book3.png" alt="book">
+                        <div class="text_card">
+                            <p class="authors">Aldous Huxley</p>
+                            <h1 class="heading">Brave new world</h1>
+                            <img src="./images/png/rating (2).png" alt="rating" class="rating">
+                            <p class="text">Dystopian novel written in 1931 by English author Aldous Huxley, and published in 1932. Largely set in...</p>
+                            <p class="price">$12.43</p>
+                            <button class="btn_buy" type="button">BUY NOW</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="img_card" src="./images/png/book4.png" alt="book">
+                        <div class="text_card">
+                            <p class="authors">Tara Westover</p>
+                            <h1 class="heading">Educated</h1>
+                            <img src="./images/png/rating (3).png" alt="rating" class="rating">
+                            <p class="text">It is a tale of fierce family loyalty and of the grief that comes with severing the closest of ties. With...</p>
+                            <p class="price">$12.68</p>
+                            <button class="btn_buy" type="button">BUY NOW</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="img_card" src="./images/png/book5.png" alt="book">
+                        <div class="text_card">
+                            <p class="authors">Marianne Fritz</p>
+                            <h1 class="heading">The weight of things</h1>
+                            <img src="./images/png/rating (4).png" alt="rating" class="rating">
+                            <p class="text">You discover not an eccentric fluke of literary nature but rather a brilliant and masterful satiris...</p>
+                            <p class="price">$18.23</p>
+                            <button class="btn_buy" type="button">BUY NOW</button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img class="img_card" src="./images/png/book6.png" alt="book">
+                        <div class="text_card">
+                            <p class="authors">Chris Power</p>
+                            <h1 class="heading">Mothers stories</h1>
+                            <img src="./images/png/rating (5).png" alt="rating" class="rating">
+                            <p class="text">The stories in Mothers lay bare the emotional and psychic damage of life, love, and abandonment...</p>
+                            <p class="price">$12.35</p>
+                            <button class="btn_buy" type="button">BUY NOW</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button type="button" class="btn_buy">LOAD MORE</button>
+    </footer>
+</body>
+</html>
